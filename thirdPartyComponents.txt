@@ -1,0 +1,10 @@
+Facebook login: react-native-fbsdk
+Wechat login: react-native-wechat
+              react-native link react-native-wechat
+dropdown area: react-native-material-dropdown
+qq login: react-native-qq
+icons: react-native-vector-icons
+map: react-native-maps
+drawer menu: react-native-drawer
+	     react-native-slider
+              

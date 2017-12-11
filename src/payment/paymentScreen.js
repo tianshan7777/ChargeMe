@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+	Image,
 	View,
 	Text,
 	TouchableOpacity,
@@ -39,6 +40,11 @@ export default class PaymentScreen extends Component {
 				    	onPress = {() => this.setState({ screen: <PaypalPay />})}>
 						<Text style = {{ color: 'black', }}>Paypal</Text>
 					</TouchableOpacity>
+				</View>
+				<View style={{flexDirection: 'row', alignItems: 'center', alignSelf:'center', marginTop: 20}}>
+					<Image style = {{width: 30, height: 30}} source = {require('../images/wechat.png')}/>
+					<Image style = {{width: 30, height: 30, marginLeft: 30}} source = {require('../images/ali.png')}/>
+					<Image style = {{width: 30, height: 30, marginLeft: 30}} source = {require('../images/oct.png')}/>
 				</View>
 				{this.state.screen}
 				<TouchableOpacity

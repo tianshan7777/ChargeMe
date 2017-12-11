@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  Image,
   Button,
   Switch,
   SliderIOS,
@@ -27,21 +28,26 @@ export default class MyMainView extends Component {
         scrollEventThrottle={200}
         contentInset={{top: 0}}
         >
-        <View style={styles.container}>
-          <Button
+
+        <View> 
+        <Button
             onPress={this.props.openDrawer}
-            title = "Open Drawer"
+            title = "User Settings"
             />
-          <View style={styles.container}>
+        </View>
+        <Image source = {require('../images/map.png')}/>
+        <View style={styles.container}>
+            
+            <View style={styles.container}>
             <MapView
-                initialRegion={{
-                  latitude: 37.78825,
-                  longitude: -122.4324,
-                  latitudeDelta: 0.0922,
-                  longitudeDelta: 0.0421,
-                }}
-                style={styles.map}/>
-          </View>
+                  initialRegion={{
+                    latitude: 37.78825,
+                    longitude: -122.4324,
+                    latitudeDelta: 0.0922,
+                    longitudeDelta: 0.0421,
+                  }}
+                  style={styles.map}/>
+            </View>
         </View>
       </ScrollView>
     )
@@ -51,12 +57,13 @@ export default class MyMainView extends Component {
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    top: 0,
+    top: 19,
     left: 0,
     right: 0,
     bottom: 0,
     justifyContent: 'flex-end',
     alignItems: 'center',
+
   },
   map: {
     left: 0,

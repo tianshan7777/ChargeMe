@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {
+  Button,
+  Image,
   AppRegistry,
   Text,
   View,
